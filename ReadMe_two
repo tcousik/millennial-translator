@@ -1,0 +1,34 @@
+CLI application that defines slang based on word inserted
+STRETCH:
+
+Definitions are scraped from Urban Dictionary and stored in a database
+STRETCH: Words are queried from the UrbanDictionary API
+
+Users sign into app with their name, this allows users to store their favorite words
+STRETCH: Users are automatically referenced by their phone number using Twilio.
+
+If a word is not found do to user input error or the word is not defined
+STRETCH: Fuzzy search or API integration with suggested similar words
+
+
+Program:  "Hello welcome to the Millenial Translation Service.  Please enter your name"
+User:  Joe
+
+Program: "Welcome back Joe.  What word confuses your old ears?"
+User: Lit
+
+Program: "When something is turned up or popping ... "
+          "Would you like to add this word to your favorites?
+            1- No, I am done
+            2- Add Word to my favorites
+            3- Show me my favorite words"
+
+User: 2
+Program: #{lit} is added to your favorites.  Is there anything else you want to do?
+          1- No, I am done
+          2- Show me my favorite words
+          3- Search new word "
+          "
+
+User: "3"
+Program: "Your favorite words:  (Limit to 10 words or sms character limit) "
